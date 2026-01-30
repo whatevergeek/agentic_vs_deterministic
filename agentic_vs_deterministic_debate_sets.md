@@ -6,52 +6,52 @@ Generated 10 different debate document sets, each targeting different audiences 
 
 ## Document Set Variations
 
-### Set 1: **Technical Architecture Focus** (`debate-documents/technical-architecture-debates.md`)
+### Set 1: **Technical Architecture Focus** ([technical-architecture-debates.md](debate-documents/technical-architecture-debates.md))
 - **Target Audience:** Software architects, senior engineers, CTOs
 - **Approach:** Deep technical tensions around system design, performance, and maintainability
 - **Debate Style:** Engineering trade-offs and architectural decisions
 
-### Set 2: **Business Risk & ROI Focus** (`debate-documents/business-risk-roi-debates.md`)
+### Set 2: **Business Risk & ROI Focus** ([business-risk-roi-debates.md](debate-documents/business-risk-roi-debates.md))
 - **Target Audience:** Business executives, CFOs, risk managers
 - **Approach:** Financial impact, business continuity, and strategic value
 - **Debate Style:** Cost-benefit analysis and business case arguments
 
-### Set 3: **Regulatory & Compliance Focus** (`debate-documents/regulatory-compliance-debates.md`)
+### Set 3: **Regulatory & Compliance Focus** ([regulatory-compliance-debates.md](debate-documents/regulatory-compliance-debates.md))
 - **Target Audience:** Compliance officers, legal teams, auditors
 - **Approach:** Regulatory requirements, audit trails, and legal implications
 - **Debate Style:** Compliance frameworks and regulatory scenarios
 
-### Set 4: **Developer Experience Focus** (`debate-documents/developer-experience-debates.md`)
+### Set 4: **Developer Experience Focus** ([developer-experience-debates.md](debate-documents/developer-experience-debates.md))
 - **Target Audience:** Software developers, DevOps engineers, team leads
 - **Approach:** Day-to-day development challenges and productivity impacts
 - **Debate Style:** Practical development scenarios and tooling decisions
 
-### Set 5: **AI Ethics & Philosophy Focus** (`debate-documents/ai-ethics-philosophy-debates.md`)
+### Set 5: **AI Ethics & Philosophy Focus** ([ai-ethics-philosophy-debates.md](debate-documents/ai-ethics-philosophy-debates.md))
 - **Target Audience:** AI researchers, ethicists, academic audience
 - **Approach:** Philosophical implications of AI autonomy vs. human control
 - **Debate Style:** Ethical frameworks and societal impact discussions
 
-### Set 6: **Industry-Specific Focus** (`debate-documents/industry-specific-debates.md`)
+### Set 6: **Industry-Specific Focus** ([industry-specific-debates.md](debate-documents/industry-specific-debates.md))
 - **Target Audience:** Domain experts across healthcare, finance, manufacturing
 - **Approach:** Real-world industry applications and sector-specific challenges
 - **Debate Style:** Case studies and industry best practices
 
-### Set 7: **Startup vs. Enterprise Focus** (`debate-documents/startup-enterprise-debates.md`)
+### Set 7: **Startup vs. Enterprise Focus** ([startup-enterprise-debates.md](debate-documents/startup-enterprise-debates.md))
 - **Target Audience:** Startup founders, enterprise architects, scaling teams
 - **Approach:** Organizational maturity and scaling considerations
 - **Debate Style:** Growth stage decisions and organizational readiness
 
-### Set 8: **Human-AI Collaboration Focus** (`debate-documents/human-ai-collaboration-debates.md`)
+### Set 8: **Human-AI Collaboration Focus** ([human-ai-collaboration-debates.md](debate-documents/human-ai-collaboration-debates.md))
 - **Target Audience:** Product managers, UX designers, workforce planners
 - **Approach:** Human-machine interaction and workforce transformation
 - **Debate Style:** User experience and organizational change management
 
-### Set 9: **Security & Trust Focus** (`debate-documents/security-trust-debates.md`)
+### Set 9: **Security & Trust Focus** ([security-trust-debates.md](debate-documents/security-trust-debates.md))
 - **Target Audience:** Security engineers, CISOs, infrastructure teams
 - **Approach:** Security implications, attack vectors, and trust models
 - **Debate Style:** Threat modeling and security architecture decisions
 
-### Set 10: **Future Vision Focus** (`debate-documents/future-vision-debates.md`)
+### Set 10: **Future Vision Focus** ([future-vision-debates.md](debate-documents/future-vision-debates.md))
 - **Target Audience:** Technology visionaries, strategic planners, futurists
 - **Approach:** Long-term technological evolution and paradigm shifts
 - **Debate Style:** Visionary scenarios and technology trajectory predictions
