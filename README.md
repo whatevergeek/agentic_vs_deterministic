@@ -4,7 +4,7 @@ Repository containing debate materials and event planning resources for explorin
 
 ## 📋 **Core Debate Materials**
 
-### [Debate Document Sets](README.md)
+### [Debate Document Sets](agentic_vs_deterministic_debate_sets.md)
 Overview of 10 different debate document sets, each targeting specific audiences (technical, business, regulatory, etc.). Contains strategy guide for selecting appropriate debate topics based on audience composition.
 
 ### [Sample Debate Topics](references/from_notebook_lm_v2.md)
@@ -41,7 +41,7 @@ Comprehensive guide for making debates engaging and memorable. Includes tourname
 ├── README.md                           # This navigation guide
 ├── event-enhancement-suggestions.md    # Event planning and engagement strategies  
 ├── debate-documents/                   # All debate topic collections
-│   ├── README.md                      # Debate sets overview and strategy guide
+│   ├── agentic_vs_deterministic_debate_sets.md  # Debate sets overview and strategy guide
 │   ├── technical-architecture-debates.md
 │   ├── business-risk-roi-debates.md
 │   └── [8 additional debate sets]
@@ -51,7 +51,7 @@ Comprehensive guide for making debates engaging and memorable. Includes tourname
 
 ## 🚀 **Quick Start**
 
-1. **Choose Your Audience**: Review [debate sets overview](README.md) to select appropriate topics
+1. **Choose Your Audience**: Review [debate sets overview](agentic_vs_deterministic_debate_sets.md) to select appropriate topics
 2. **Plan Your Event**: Use [enhancement suggestions](event-enhancement-suggestions.md) for engagement strategies  
 3. **Customize Content**: Adapt debate topics and polling questions for your specific context
 4. **Execute**: Run your debate event with real-time polling and audience interaction
