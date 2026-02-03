@@ -1,6 +1,18 @@
-# Agentic AI vs. Deterministic Workflows: Debate Resources
+# Agentic AI vs. Deterministic AI Workflows: Debate Resources
 
-Repository containing debate materials and event planning resources for exploring the tensions between agentic AI systems and deterministic workflows.
+Repository containing debate materials and event planning resources for exploring the tensions between agentic AI systems and deterministic AI workflows.
+
+**The Core Distinction:** Both approaches leverage AI intelligence, but differ in control paradigms:
+- **Agentic AI Workflow**: Give AI a goal → Let AI determine its own path to achieve it
+- **Deterministic AI Workflow**: Give AI a goal + prescribed steps → AI follows controlled path
+
+## 🎵 **Battle Rap Collection**
+
+### [Battle Rap V1](agentic_vs_deterministic_ai_battle_rap_v1.md)
+AI personas debate - "Agent Flow" (pro-agentic) vs "Deterministic D" (pro-deterministic) in lyrical showdown with software architecture focus, 4/4 time signature compatibility.
+
+### [Battle Rap V2](agentic_vs_deterministic_ai_battle_rap_v2.md)
+Human personas debate - "Agent A" (pro-agentic AI adoption) vs "DJ D" (pro-deterministic AI adoption) with enhanced wit, technical terminology, and engaging tension.
 
 ## 📋 **Core Debate Materials**
 
@@ -38,15 +50,18 @@ Comprehensive guide for making debates engaging and memorable. Includes tourname
 ## 📁 **Repository Structure**
 
 ```
-├── README.md                           # This navigation guide
-├── event-enhancement-suggestions.md    # Event planning and engagement strategies  
-├── debate-documents/                   # All debate topic collections
-│   ├── agentic_vs_deterministic_debate_sets.md  # Debate sets overview and strategy guide
+├── README.md                                    # This navigation guide
+├── agentic_vs_deterministic_ai_battle_rap_v1.md # AI personas battle rap
+├── agentic_vs_deterministic_ai_battle_rap_v2.md # Human personas battle rap
+├── event-enhancement-suggestions.md             # Event planning and engagement strategies  
+├── party-mode-chat-transcript.md               # BMAD collaboration session transcript
+├── debate-documents/                            # All debate topic collections
+│   ├── agentic_vs_deterministic_debate_sets.md # Debate sets overview and strategy guide
 │   ├── technical-architecture-debates.md
 │   ├── business-risk-roi-debates.md
 │   └── [8 additional debate sets]
 └── references/
-    └── from_notebook_lm_v2.md         # Original sample debate format
+    └── from_notebook_lm_v2.md                  # Original sample debate format
 ```
 
 ## 🚀 **Quick Start**
@@ -57,3 +72,10 @@ Comprehensive guide for making debates engaging and memorable. Includes tourname
 4. **Execute**: Run your debate event with real-time polling and audience interaction
 
 Each debate document contains 10 subtopics with balanced arguments, polling questions, and "No Clear Winner" tensions designed to split audiences for maximum engagement.
+
+## 🎤 **Entertainment Features**
+
+- **Battle Raps**: Two versions available - AI personas and human personas debating AI workflow approaches
+- **4/4 Time Signature**: Compatible with background beats for live performance
+- **Technical Focus**: Software architecture, DevOps, and development terminology woven into rap flows
+- **Engaging Tension**: Witty exchanges and technical burns while maintaining debate substance

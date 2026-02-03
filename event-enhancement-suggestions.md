@@ -1,4 +1,22 @@
-# Event Enhancement Suggestions: Making the Agentic vs. Deterministic Debate Unforgettable
+# Event Enhancement Suggestions: Making the Agentic vs. Deterministic AI Debate Unforgettable
+
+**The Core Distinction:** Both approaches leverage AI intelligence, but differ in control paradigms:
+- **Agentic AI Workflow**: Give AI a goal → Let AI determine its own path to achieve it
+- **Deterministic AI Workflow**: Give AI a goal + prescribed steps → AI follows controlled path
+
+## 🎵 **Battle Rap Integration**
+
+### **Live Performance Elements**
+- **Opening Act:** Battle rap performance to energize audience (V1 or V2)
+- **4/4 Beat Integration:** Live DJ providing background beats during rap segments
+- **Audience Participation:** Crowd chanting and call-and-response moments
+- **Technical Freestyle:** Impromptu rap battles using audience-suggested technical terms
+
+### **Musical Engagement**
+- **Theme Songs:** Each debate approach gets signature entrance music
+- **Victory Anthems:** Winning side gets celebratory musical moments
+- **Remix Opportunities:** Audience creates remixes of battle rap content
+- **Karaoke Segments:** Audience members perform battle rap verses
 
 ## 🎭 **Format Innovations**
 

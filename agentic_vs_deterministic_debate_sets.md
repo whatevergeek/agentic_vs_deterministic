@@ -1,4 +1,8 @@
-# Agentic AI vs. Deterministic Workflows - Debate Document Sets
+# Agentic AI vs. Deterministic AI Workflows - Debate Document Sets
+
+**The Core Distinction:** Both approaches leverage AI intelligence, but differ in control paradigms:
+- **Agentic AI Workflow**: Give AI a goal → Let AI determine its own path to achieve it
+- **Deterministic AI Workflow**: Give AI a goal + prescribed steps → AI follows controlled path
 
 ## Overview
 
