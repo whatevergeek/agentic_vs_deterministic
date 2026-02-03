@@ -19,7 +19,7 @@ Human personas debate - "Agent A" (pro-agentic AI adoption) vs "DJ D" (pro-deter
 ### [Debate Document Sets](agentic_vs_deterministic_debate_sets.md)
 Overview of 10 different debate document sets, each targeting specific audiences (technical, business, regulatory, etc.). Contains strategy guide for selecting appropriate debate topics based on audience composition.
 
-### [Sample Debate Topics](references/from_notebook_lm_v2.md)
+### [Sample Debate Topics](references/from_notebook_lm.md)
 Original 10 debate topics covering key tensions like auditability, compliance, data integrity, and developer experience. Serves as the foundational example format with real-world citations and balanced arguments.
 
 ## 🎯 **Debate Document Collections**
@@ -56,12 +56,12 @@ Comprehensive guide for making debates engaging and memorable. Includes tourname
 ├── event-enhancement-suggestions.md             # Event planning and engagement strategies  
 ├── party-mode-chat-transcript.md               # BMAD collaboration session transcript
 ├── debate-documents/                            # All debate topic collections
-│   ├── agentic_vs_deterministic_debate_sets.md # Debate sets overview and strategy guide
+├── agentic_vs_deterministic_debate_sets.md        # Debate sets overview and strategy guide
 │   ├── technical-architecture-debates.md
 │   ├── business-risk-roi-debates.md
 │   └── [8 additional debate sets]
 └── references/
-    └── from_notebook_lm_v2.md                  # Original sample debate format
+    └── from_notebook_lm.md                     # Original sample debate format
 ```
 
 ## 🚀 **Quick Start**
