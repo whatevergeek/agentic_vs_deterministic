@@ -50,12 +50,12 @@ A Deterministic AI approach gives the AI a **goal + prescribed analysis steps**.
 
 The system:
 
-1. **Executes prescribed valuation methodology** - Follows explicit rules: DCF analysis with specified discount rates, comparable multiples peer set (pre-defined), revenue growth assumptions (pre-set). Every company analyzed identically through each step.
-2. **Applies deterministic decision logic** - Scoring framework: financial health (40%), strategic fit (35%), buyer appeal (25%). Same criteria, same weights for all 47 companies. No deviation from prescribed process.
-3. **Produces audit-trail output** - Every recommendation includes: which step of methodology applied, data source, calculation shown, comparison to peer cohort. Investment committee sees the prescribed path taken.
-4. **Eliminates analyst judgment variance** - Two analysts running deterministic analysis on Company A produce identical output. Process consistency removes subjective interpretation.
+1. **AI executes prescribed valuation methodology** - AI follows explicit rules: DCF analysis with specified discount rates, comparable multiples peer set (pre-defined), revenue growth assumptions (pre-set). AI analyzes every company identically through each prescribed step.
+2. **AI applies deterministic decision logic** - AI uses scoring framework: financial health (40%), strategic fit (35%), buyer appeal (25%). AI applies same criteria, same weights for all 47 companies per prescribed rules. No deviation from prescribed process.
+3. **AI produces audit-trail output** - Every AI recommendation includes: which step of methodology applied, data source, calculation shown, comparison to peer cohort. Investment committee sees the prescribed path AI took.
+4. **AI eliminates analyst judgment variance** - AI running deterministic analysis twice on Company A produces identical output. Prescribed process removes AI's subjective interpretation.
 
-**Key advantage:** Verifiable, auditable, repeatable. Investment committee validates that all companies evaluated through identical prescribed methodology. Regulatory compliance straightforward—clear process audit trail.
+**Key advantage:** Verifiable, auditable, repeatable. Investment committee validates that all companies evaluated through identical AI-executed prescribed methodology. Regulatory compliance straightforward—clear AI process audit trail.
 
 **Risk:** Prescribed steps might miss emerging strategic opportunities. If market conditions shift mid-analysis, prescribed methodology doesn't adapt. Might optimize for outdated criteria.
 
@@ -128,7 +128,7 @@ graph TD
 | **DETERMINISTIC AI** | **AGENTIC AI** |
 |---|---|
 | **Regulatory Auditability** | **Insight Discovery at Scale** |
-| Every extraction/analysis decision traced to explicit framework rules. Board auditors can verify: "These 8 divestiture recommendations followed scoring framework 1.2, each company scored on identical 100-point scale, all recommendations justified by documented criteria." Regulators and investors trust verifiable methodology. **In use case:** Investment committee reviews Company A (34/100) recommendation and sees exact scoring breakdown—validates analysis was rigorous and unbiased. | Autonomously discovers non-obvious correlations across 2,340 documents that predetermined framework would miss. Finds Companies C & D have overlapping customers AND competitive tension. Deterministic scoring rates identically; agentic finds divest-to-specific-buyer opportunity worth $200M premium (consolidation play). **In use case:** Pattern analysis reveals buyer X acquiring D's competitor—premium paid for C if divested strategically to X. Framework would never identify this cross-document connection. |
+| AI executes prescribed framework rules for every extraction/analysis decision. Board auditors can verify: "AI applied scoring framework 1.2 to these 8 divestiture recommendations, AI scored each company on identical 100-point scale, all AI recommendations justified by documented criteria." Regulators and investors trust verifiable AI-executed methodology. **In use case:** Investment committee reviews Company A (34/100) recommendation and sees exact AI scoring breakdown—validates AI analysis was rigorous and unbiased. | Autonomously discovers non-obvious correlations across 2,340 documents that predetermined framework would miss. Finds Companies C & D have overlapping customers AND competitive tension. Deterministic scoring rates identically; agentic finds divest-to-specific-buyer opportunity worth $200M premium (consolidation play). **In use case:** Pattern analysis reveals buyer X acquiring D's competitor—premium paid for C if divested strategically to X. Framework would never identify this cross-document connection. |
 | **Guaranteed Consistency** | **Adaptive Analysis** |
 | Same portfolio company data, same scoring framework, same output every time. If two analysts independently score Company A, results identical. One slip-up (inconsistent analysis of 1 company in 47) could propagate through entire divestiture sequence. Deterministic prevents this. **In use case:** 47 companies scored consistently—investment committee confident all recommendations applied same rigor. No analyst bias, no "favorites.". | Adapts analysis depth based on what emerges from documents. Discovers that Company F data reveals hidden customer churn pattern. Automatically adjusts F's analysis trajectory: escalates research on retention crisis rather than applying baseline valuation approach. Learning contextualizes findings. **In use case:** Detects that Company B documents show management turnover coinciding with customer losses—agentic system recognizes pattern relevance, escalates deeper divestiture urgency analysis. |
 | **Performance Predictability** | **Contextual Intelligence** |
@@ -187,10 +187,10 @@ A Deterministic AI approach gives the AI **goal + prescribed governance steps**.
 
 The system:
 
-1. **Executes prescribed governance process** - Every change: identical risk assessment rubric (system criticality score + change complexity score = approval level). Testing requirement determined by formula (not judgment). Security review takes exactly 24 hours.
-2. **Applies deterministic decision logic** - Same gates for all systems: trading platform changes AND data warehouse configuration changes follow identical 5-step process. No exceptions, no system-specific adaptation.
-3. **Creates consistent audit trail** - Every change approval: timestamp when each step completed, approver signature, score calculated, decision rationale from prescribed rubric. CAB sees identical decision flow for all 200 daily changes.
-4. **Eliminates approval variability** - Tuesday's change priority level 3 → approves in 48 hours. Thursday's similar priority 3 → identical 48-hour timeline. No variance based on reviewer mood, workload, or changing criteria.
+1. **AI executes prescribed governance process** - AI applies identical risk assessment rubric to every change (system criticality score + change complexity score = approval level). AI determines testing requirement by formula (not judgment). AI enforces security review taking exactly 24 hours.
+2. **AI applies deterministic decision logic** - AI uses same gates for all systems: trading platform changes AND data warehouse configuration changes follow identical AI-executed 5-step process. No exceptions, no system-specific adaptation per prescribed rules.
+3. **AI creates consistent audit trail** - AI logs every change approval: timestamp when each step completed, approver signature, score calculated, decision rationale from prescribed rubric. CAB sees identical AI decision flow for all 200 daily changes.
+4. **AI eliminates approval variability** - AI processes Tuesday's change priority level 3 → approves in 48 hours. Thursday's similar priority 3 → AI applies identical 48-hour timeline. No variance based on reviewer mood, workload, or changing criteria.
 
 **Key advantage:** Regulatory compliance straightforward. Auditors verify: "All 200 daily changes processed via same 5-step governance. No favoritism, no inconsistency. SLA compliance provable."
 
@@ -326,10 +326,10 @@ A Deterministic AI approach gives the AI **goal + prescribed diagnostic steps**.
 
 The system:
 
-1. **Executes prescribed diagnostic process** - Latency spike detected → gather current metrics (P99 latency, CPU%, error rate) → compare to 200 historical signatures → match rule 47 (latency + high CPU + error spike = network saturation) → return diagnosis. Process same for all incidents.
-2. **Applies deterministic rule matching** - Incident A matches rule 47. Incident B (same symptoms) also matches rule 47. Identical diagnosis because process deterministic. Two engineers diagnosing same symptoms independently reach same conclusion.
-3. **Provides verifiable diagnosis reasoning** - "Diagnosis: Network saturation. Confidence: 87%. Rule triggered: #47. Historical accuracy: 87% (23 of 23 matching incidents had network saturation root cause). Recommended remediation: reduce traffic routing, escalate to network ops."
-4. **Enables audit trail validation** - On-call engineer verifies: "Did diagnosis match my manual analysis? Yes—I examined logs independently and also concluded network saturation. Prescribed process reached correct answer."
+1. **AI executes prescribed diagnostic process** - Latency spike detected → AI gathers current metrics (P99 latency, CPU%, error rate) → AI compares to 200 historical signatures → AI matches rule 47 (latency + high CPU + error spike = network saturation) → AI returns diagnosis. AI applies same process for all incidents.
+2. **AI applies deterministic rule matching** - Incident A: AI matches rule 47. Incident B (same symptoms): AI matches rule 47. Identical AI diagnosis because process deterministic. AI running twice on same symptoms independently reaches same conclusion.
+3. **AI provides verifiable diagnosis reasoning** - "AI Diagnosis: Network saturation. Confidence: 87%. Rule triggered: #47. Historical accuracy: 87% (23 of 23 matching incidents had network saturation root cause). AI recommended remediation: reduce traffic routing, escalate to network ops."
+4. **AI enables audit trail validation** - On-call engineer verifies: "Did AI diagnosis match my manual analysis? Yes—I examined logs independently and also concluded network saturation. AI's prescribed process reached correct answer."
 
 **Key advantage:** Verifiable diagnosis. On-call engineer can cross-check against historical database. Remediation proven effective in 87% of prior similar incidents.
 
@@ -464,10 +464,10 @@ A Deterministic AI approach gives the AI **goal + prescribed release process**. 
 
 The system:
 
-1. **Executes prescribed sequential phases** - Quant review weeks 1-2 → risk review weeks 3-4 → compliance weeks 4-5 → staging week 6 → pilot weeks 7-8 → production week 9. Each phase completes fully, formal approval triggers next phase. No phase begins until previous phase done.
-2. **Applies deterministic completion criteria** - Each phase has explicit checkboxes: Quant (mathematical validation complete? Backtest methodology reviewed? ✓). Risk (VaR limitations reviewed? Stress scenarios approved? ✓). Compliance (regulatory requirements verified? ✓). When all checkboxes met, phase passes and next phase begins.
-3. **Creates verifiable audit trail** - Every phase: signed off by responsible team, timestamp of completion, criteria verified, next phase trigger recorded. Timeline: predictable and linear from day 1.
-4. **Ensures no abbreviated rigor** - Each phase receives full review regardless of other phases. Quant team doesn't fast-track because compliance already approved. All teams maintain full rigor.
+1. **AI executes prescribed sequential phases** - AI manages quant review weeks 1-2 → AI coordinates risk review weeks 3-4 → AI facilitates compliance weeks 4-5 → AI orchestrates staging week 6 → AI runs pilot weeks 7-8 → AI executes production week 9. Each phase completes fully, AI triggers next phase per prescribed sequence. No phase begins until AI confirms previous phase done.
+2. **AI applies deterministic completion criteria** - AI checks each phase's explicit checkboxes: Quant (mathematical validation complete? Backtest methodology reviewed? ✓). Risk (VaR limitations reviewed? Stress scenarios approved? ✓). Compliance (regulatory requirements verified? ✓). When AI verifies all checkboxes met, phase passes and AI triggers next phase.
+3. **AI creates verifiable audit trail** - AI logs every phase: signed off by responsible team, timestamp of completion, criteria verified, next phase trigger recorded. Timeline: predictable and linear from day 1 via AI execution.
+4. **AI ensures no abbreviated rigor** - AI applies full review to each phase regardless of other phases. Quant team doesn't fast-track because compliance already approved. AI maintains full rigor per prescribed rules.
 
 **Key advantage:** Audit trail comprehensive and linear. Regulators verify: "Every phase completed sequentially, every team signed off, zero shortcuts taken."
 
@@ -544,7 +544,7 @@ graph TD
 | **DETERMINISTIC AI** | **AGENTIC AI** |
 |---|---|
 | **Process Compliance and Auditability** | **Context-Aware Phase Decisions** |
-| Model release follows documented 7-phase gate process. Audit trail: quantitative team signed off phase 1, risk officer signed off phase 2, compliance signed off phase 3, pilot results phase 5 documented. Regulators inspect process and confirm every phase completed. **In use case:** VaR model release reaches production—auditors verify all phases completed, all approvals documented. Risk team accountable for hypothesis testing rigor. Full audit trail proves governance. | Model complexity varies. Volatility model revision (mostly statistical, low architecture risk) needs different scrutiny than algorithmic rewrite. Agentic system assesses risk profile: low-risk revision can parallelize risk+compliance reviews; high-risk change requires sequential gates. **In use case:** Instead of 8-10 week fixed timeline, agentic system adapts: statistical volatility update (low risk) completes in 5 weeks via parallel phases. Major algorithmic change (high risk) still takes 8-10 weeks with sequential gates. |
+| AI executes documented 7-phase gate process for model release. Audit trail: AI coordinated quantitative team sign-off phase 1, AI facilitated risk officer sign-off phase 2, AI managed compliance sign-off phase 3, AI orchestrated pilot results phase 5 documentation. Regulators inspect AI-executed process and confirm every phase completed. **In use case:** VaR model release reaches production—auditors verify AI completed all phases, all approvals documented. Risk team accountable for hypothesis testing rigor. Full AI audit trail proves governance. | Model complexity varies. Volatility model revision (mostly statistical, low architecture risk) needs different scrutiny than algorithmic rewrite. Agentic system assesses risk profile: low-risk revision can parallelize risk+compliance reviews; high-risk change requires sequential gates. **In use case:** Instead of 8-10 week fixed timeline, agentic system adapts: statistical volatility update (low risk) completes in 5 weeks via parallel phases. Major algorithmic change (high risk) still takes 8-10 weeks with sequential gates. |
 | **Specialization Excellence** | **Cross-Phase Optimization** |
 | Each phase owns specific expertise: Quant team validates math, Risk team validates VaR accuracy, Compliance validates regulatory fit. Specialization creates excellence in each domain. **In use case:** Quant team expert at mathematical validation. Risk team expert at VaR underestimation detection. Compliance expert at regulatory requirements. Each phase optimized for its domain. | Staging testing reveals minor tail-risk variance (98th percentile vs 99th). Deterministic AI: escalate to risk phase, restart full gate (2 weeks). Agentic AI: model improvement agent proposes refinement, re-tests within staging, risk team reviews refined model in 2-day cycle. Same scrutiny, faster iteration. **In use case:** Cross-phase learning catches issues before they become phase restarts. Issue resolved via optimization rather than bureaucratic escalation. |
 | **Predictable Resource Planning** | **Autonomous Escalation Intelligence** |
@@ -595,10 +595,10 @@ A Deterministic AI approach gives the AI **goal + prescribed fraud detection rul
 
 The system:
 
-1. **Executes prescribed fraud rules** - Transaction arrives → check against 150 deterministic rules → rule matches → apply prescribed decision (block, require-verification, or allow). Same rules applied to all transactions.
-2. **Applies deterministic decision logic** - Card A matches rule 3 (test pattern): BLOCK. Card B (same test pattern): BLOCK. Identical fraud determination because rules deterministic. Two fraud analysts evaluating same pattern independently reach same conclusion.
-3. **Provides verifiable fraud reasoning** - "Transaction blocked: Rule 3 triggered (card test pattern detected: $2→$5→$500+). Historical accuracy: 94% (detected as fraud in 94 of 100 similar patterns). Recommended next step: contact cardholder for verification."
-4. **Enables audit trail compliance** - Every block: which rule triggered, transaction flagged, audit logged. Regulators can verify: "Fraud block #4,521 triggered Rule 3. Rule 3 historically 94% accurate." Compliance provable.
+1. **AI executes prescribed fraud rules** - Transaction arrives → AI checks against 150 deterministic rules → AI finds rule match → AI applies prescribed decision (block, require-verification, or allow). AI applies same rules to all transactions.
+2. **AI applies deterministic decision logic** - Card A: AI matches rule 3 (test pattern): BLOCK. Card B (same test pattern): AI matches rule 3: BLOCK. Identical AI fraud determination because rules deterministic. AI running twice on same pattern independently reaches same conclusion.
+3. **AI provides verifiable fraud reasoning** - "AI blocked transaction: Rule 3 triggered (card test pattern detected: $2→$5→$500+). Historical accuracy: 94% (detected as fraud in 94 of 100 similar patterns). AI recommended next step: contact cardholder for verification."
+4. **AI enables audit trail compliance** - Every AI block: which rule triggered, transaction flagged, audit logged. Regulators can verify: "AI fraud block #4,521 triggered Rule 3. Rule 3 historically 94% accurate." Compliance provable.
 
 **Key advantage:** Verifiable fraud prevention. Rules based on proven historical fraud patterns. Compliance auditable—regulators can verify rules and their effectiveness.
 
@@ -738,10 +738,10 @@ A Deterministic AI approach gives the AI **goal + prescribed infrastructure conf
 
 The system:
 
-1. **Executes prescribed infrastructure configuration** - 1.2 TFlops provisioned globally 24/7 (peak New York: 1000 TFlops + 20% headroom). Same configuration every hour, every day. Weekday peak = weekend off-market = identical capacity.
-2. **Applies deterministic SLA commitment** - Infrastructure constant → uptime guaranteed at 99.99%. Can contractually commit to regulators: "Market-ready every hour, every day. Failure rate predictable per proven architecture." Commitment backed by fixed configuration.
-3. **Provides verifiable architecture** - "Our infrastructure: 4 regions, full replication, load balancers on all zones. This exact config has proven 99.99% uptime for 25 years." Architecture auditable and battle-tested.
-4. **Eliminates dynamic complexity** - Same infrastructure serves peak hours (efficient) and off-market hours (over-provisioned but predictable). No scaling logic, no automation risk. Configuration stable and proven.
+1. **AI executes prescribed infrastructure configuration** - AI maintains 1.2 TFlops provisioned globally 24/7 (peak New York: 1000 TFlops + 20% headroom) per prescribed rules. AI applies same configuration every hour, every day. Weekday peak = weekend off-market = identical AI-managed capacity.
+2. **AI applies deterministic SLA commitment** - AI keeps infrastructure constant → uptime guaranteed at 99.99%. Can contractually commit to regulators: "AI ensures market-ready every hour, every day. Failure rate predictable per AI-executed proven architecture." Commitment backed by AI following fixed prescribed configuration.
+3. **AI provides verifiable architecture** - "Our AI-managed infrastructure: 4 regions, full replication, load balancers on all zones per prescribed rules. This AI-executed config has proven 99.99% uptime for 25 years." AI operations auditable and battle-tested.
+4. **AI eliminates dynamic complexity** - AI applies same prescribed infrastructure rules for peak hours (efficient) and off-market hours (over-provisioned but predictable). AI has no scaling autonomy, no dynamic decision risk. AI-executed configuration stable and proven.
 
 **Key advantage:** Regulatory and clearing partners trust constant, proven infrastructure. SLA commitments backed by predictable, audited architecture.
 
