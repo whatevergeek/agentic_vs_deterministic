@@ -466,27 +466,28 @@ Most enterprise systems benefit from hybrid models:
 
 ---
 
-## SPECTRUM VISUALIZATION
+### Decision Spectrum for Choosing Approach
 
-Instead of binary choices, here's a visual spectrum showing the continuum from fully Agentic (left) to fully Deterministic (right) for each criterion. The position indicates the recommended approach based on the analysis.
+![Decision Spectrum for Choosing Approach](images/decision_spectrum-agentic_vs_deterministic.png)
 
-```mermaid
-graph TD
-    subgraph "AI Approach Spectrum"
-    A[Regulatory Compliance<br/>Agentic ◯-----● Deterministic] 
-    B[Audit Trail Criticality<br/>Agentic ◯-----● Deterministic]
-    C[Predictability Required<br/>Agentic ◯-----● Deterministic]
-    D[Formal Verification Needed<br/>Agentic ◯-----● Deterministic]
-    E[Cost Optimization<br/>Agentic ●-----◯ Deterministic]
-    F[Novel Problem Types<br/>Agentic ●-----◯ Deterministic]
-    G[Autonomous Adaptation<br/>Agentic ●-----◯ Deterministic]
-    H[Learning from Experience<br/>Agentic ●-----◯ Deterministic]
-    I[Context Awareness<br/>Agentic ●-----◯ Deterministic]
-    J[Known Threat Models<br/>Agentic ◯-----● Deterministic]
-    end
-```
 
-**Legend:**
-- ● = Recommended position on the spectrum
-- ◯ = Opposite end
-- The dashes represent the continuum between approaches
+
+### **Spectrum Placement Rationale**
+
+The mapping across the 10-step gradient is based on the balance between **Rigid Control** and **Dynamic Autonomy** as defined in the debate research.
+
+#### **1. The Deterministic Anchor (Steps 1–3)**
+* **Regulatory Compliance (1.0):** Positioned at the absolute start because it requires "explicit, approved policies" and "verifiable documentation".
+* **Audit Trail Criticality (1.4):** Requires decisions to be "identically processed" and "traceable," necessitating a workflow where every step is documented and reproducible.
+* **Formal Verification Needed (2.1):** Mapped to the left because logic must be "mathematically proven" to behave safely under all defined conditions.
+* **Predictability Required (3.2):** Essential for "budget certainty" and "contractable SLAs" where outcomes and costs must be known in advance.
+
+#### **2. The Transition Zone (Steps 4–7)**
+* **Known Threat Models (4.5):** Sits in the mid-left because while it relies on "hardened constraints," it requires slight flexibility to catch variations of known attack signatures.
+* **Cost Optimization (6.8):** Leans toward the Agentic side because systems must "autonomously optimize cost-to-reliability tradeoffs" dynamically based on real-time operational experience.
+
+#### **3. The Agentic Anchor (Steps 8–10)**
+* **Context Awareness (8.0):** Moves into high autonomy as the system must "reason about user context" and make nuanced tradeoffs that cannot be pre-scripted.
+* **Autonomous Adaptation (9.1):** Positioned here because the system must "adjust autonomously" to changing environments without manual reconfiguration.
+* **Learning from Experience (9.6):** A core agentic trait where the system "improves over time" through "accumulated experience" rather than remaining static.
+* **Novel Problem Types (10.0):** The far-right anchor, used for "unseen data" and "insight discovery" where no predefined rules or schemas exist.
