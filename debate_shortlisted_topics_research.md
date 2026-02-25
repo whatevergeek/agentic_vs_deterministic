@@ -463,3 +463,30 @@ Most enterprise systems benefit from hybrid models:
 - **Deterministic core** with hard safety constraints (regulatory compliance, security bounds)
 - **Agentic layer** for optimization, learning, and context adaptation within deterministic bounds
 - Example: Deterministic access controls with agentic anomaly detection
+
+---
+
+## SPECTRUM VISUALIZATION
+
+Instead of binary choices, here's a visual spectrum showing the continuum from fully Agentic (left) to fully Deterministic (right) for each criterion. The position indicates the recommended approach based on the analysis.
+
+```mermaid
+graph TD
+    subgraph "AI Approach Spectrum"
+    A[Regulatory Compliance<br/>Agentic ◯-----● Deterministic] 
+    B[Audit Trail Criticality<br/>Agentic ◯-----● Deterministic]
+    C[Predictability Required<br/>Agentic ◯-----● Deterministic]
+    D[Formal Verification Needed<br/>Agentic ◯-----● Deterministic]
+    E[Cost Optimization<br/>Agentic ●-----◯ Deterministic]
+    F[Novel Problem Types<br/>Agentic ●-----◯ Deterministic]
+    G[Autonomous Adaptation<br/>Agentic ●-----◯ Deterministic]
+    H[Learning from Experience<br/>Agentic ●-----◯ Deterministic]
+    I[Context Awareness<br/>Agentic ●-----◯ Deterministic]
+    J[Known Threat Models<br/>Agentic ◯-----● Deterministic]
+    end
+```
+
+**Legend:**
+- ● = Recommended position on the spectrum
+- ◯ = Opposite end
+- The dashes represent the continuum between approaches
