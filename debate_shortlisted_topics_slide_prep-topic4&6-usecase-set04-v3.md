@@ -39,6 +39,14 @@ graph LR
     style E fill:#0288d1
 ```
 
+**Diagram Narrative:** This diagram illustrates the rigid, sequential nature of a Deterministic AI workflow for code modernization. Starting from the `Legacy Codebase`, the AI proceeds through distinct, ordered phases to transform the system into a `Modern Platform`.
+
+*   **A[\"Legacy Codebase\"]**: Represents the existing large, complex, and technically indebted trading platform.
+*   **B[\"1. Scan & Catalog\"]**: The first step where the AI meticulously scans the entire codebase, identifying dependencies and cataloging all components based on a predefined methodology.
+*   **C[\"2. Sequential Refactor\"]**: The core refactoring phase, where the AI systematically refactors modules one by one, strictly adhering to a prescribed order and refactoring patterns.
+*   **D[\"3. Template Testing\"]**: After each refactoring step, the AI applies comprehensive tests based on predefined templates to ensure correctness and adherence to quality standards.
+*   **E[\"Modern Platform\"]**: The final state, where the legacy platform has been transformed into a scalable, maintainable, and secure modern system, achieved through a controlled and auditable process.
+
 ---
 
 ## TOPIC 4 - SLIDE B: Agentic AI Approach
@@ -68,6 +76,14 @@ graph LR
     style C fill:#ce93d8
     style E fill:#8e24aa
 ```
+
+**Diagram Narrative:** This diagram depicts the dynamic and autonomous nature of an Agentic AI workflow for code modernization. The AI, acting as a central intelligent agent, assesses the `Legacy Codebase` and independently determines the most efficient path to a `Modern Platform`.
+
+*   **A[\"Legacy Codebase\"]**: Represents the existing large, complex, and technically indebted trading platform.
+*   **B{\"AI Brain:<br/>Prioritize & Solve\"}**: This central node signifies the Agentic AI's core capability to autonomously analyze the codebase, prioritize critical sections, and devise optimal refactoring strategies.
+*   **C[\"Parallel Refactoring\"]**: Illustrates the AI's ability to identify independent code modules and initiate parallel refactoring efforts, significantly accelerating the modernization process.
+*   **D[\"Pattern Extraction\"]**: Shows the AI's intelligence in detecting recurring code patterns (e.g., duplicated code) and extracting them into reusable components, which are then applied across the codebase.
+*   **E[\"Modern Platform\"]**: The desired outcome, a fully modernized, scalable, and maintainable platform, achieved through the Agentic AI's dynamic and context-aware approach.
 
 ---
 
@@ -117,6 +133,14 @@ graph LR
     style E fill:#2196f3
 ```
 
+**Diagram Narrative:** This diagram illustrates the Deterministic AI approach to trading infrastructure cost optimization. It emphasizes a static, consistent configuration across `Global Data Centers` to ensure `Reliable Trading` with guaranteed service levels.
+
+*   **A[\"Global Data Centers\"]**: Represents the distributed trading infrastructure spanning multiple geographical locations.
+*   **B[\"1. Peak Provisioning\"]**: The AI ensures that all data centers are provisioned to handle peak trading loads 24/7, regardless of actual demand.
+*   **C[\"2. Static Redundancy\"]**: This block highlights the deployment of identical load balancers and full database replication across all regions, maintaining a constant state of high availability.
+*   **D[\"3. Fixed SLA\"]**: The outcome of the deterministic approach, guaranteeing a fixed Service Level Agreement for uptime and market readiness due to the unchanging infrastructure.
+*   **E[\"Reliable Trading\"]**: The ultimate goal, achieved through a predictable and consistently provisioned infrastructure, prioritizing stability over dynamic cost optimization.
+
 ---
 
 ## TOPIC 6 - SLIDE B: Agentic AI Approach
@@ -146,6 +170,14 @@ graph LR
     style C fill:#e1bee7
     style E fill:#7b1fa2
 ```
+
+**Diagram Narrative:** This diagram illustrates the Agentic AI approach to trading infrastructure cost optimization. Here, the AI acts as an intelligent `AI Brain` that continuously learns, predicts, and dynamically adjusts resources across `Global Data Centers` to achieve `Optimized Trading`.
+
+*   **A[\"Global Data Centers\"]**: Represents the distributed trading infrastructure spanning multiple geographical locations.
+*   **B{\"AI Brain:<br/>Predict & Scale\"}**: This central node signifies the Agentic AI's core capability to autonomously analyze historical and real-time data, predict demand spikes, and determine optimal scaling strategies.
+*   **C[\"Off-Market Scale Down\"]**: Shows the AI's ability to significantly reduce infrastructure capacity during off-market hours, leading to substantial daily cost savings.
+*   **D[\"Pre-Event Scale Up\"]**: Illustrates the AI's proactive intelligence in anticipating major market announcements or events and pre-provisioning resources to prevent latency or performance issues during demand surges.
+*   **E[\"Optimized Trading\"]**: The ultimate outcome, where high uptime and performance are maintained, but with drastically reduced operational costs due to the dynamic and intelligent management of resources.
 
 ---
 

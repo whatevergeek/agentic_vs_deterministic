@@ -1,0 +1,48 @@
+<svg width="900" height="550" viewBox="0 0 900 550" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="550" fill="#ffffff" />
+  
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">Decision Spectrum for Choosing Approach</text>
+  
+  <text x="220" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#8b0000">DETERMINISTIC AI</text>
+  <text x="220" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#8b0000">(Rigid Control)</text>
+  
+  <text x="780" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#006400">AGENTIC AI</text>
+  <text x="780" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#006400">(Dynamic Autonomy)</text>
+
+  <g stroke="#e0e0e0" stroke-width="1">
+    <line x1="220" y1="140" x2="780" y2="140" />
+    <line x1="220" y1="175" x2="780" y2="175" />
+    <line x1="220" y1="210" x2="780" y2="210" />
+    <line x1="220" y1="245" x2="780" y2="245" />
+    <line x1="220" y1="280" x2="780" y2="280" />
+    <line x1="220" y1="315" x2="780" y2="315" />
+    <line x1="220" y1="350" x2="780" y2="350" />
+    <line x1="220" y1="385" x2="780" y2="385" />
+    <line x1="220" y1="420" x2="780" y2="420" />
+    <line x1="220" y1="455" x2="780" y2="455" />
+  </g>
+
+  <g stroke="#cccccc" stroke-dasharray="4">
+    <line x1="220" y1="120" x2="220" y2="470" /> 
+    <line x1="780" y1="120" x2="780" y2="470" />
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="13" fill="#444">
+    <text x="210" y="145" text-anchor="end">Novel Problem Types</text>
+    <text x="210" y="180" text-anchor="end">Learning from Experience</text>
+    <text x="210" y="215" text-anchor="end">Autonomous Adaptation</text>
+    <text x="210" y="250" text-anchor="end">Context Awareness</text>
+    <text x="210" y="285" text-anchor="end">Cost Optimization</text>
+    <text x="210" y="320" text-anchor="end">Known Threat Models</text>
+    <text x="210" y="355" text-anchor="end">Predictability Required</text>
+    <text x="210" y="390" text-anchor="end">Formal Verification Needed</text>
+    <text x="210" y="425" text-anchor="end">Audit Trail Criticality</text>
+    <text x="210" y="460" text-anchor="end">Regulatory Compliance</text>
+  </g>
+
+  <circle cx="780" cy="140" r="9" fill="#7ed957" /> <circle cx="755" cy="175" r="9" fill="#54b251" /> <circle cx="724" cy="210" r="9" fill="#2d8e4c" /> <circle cx="655" cy="245" r="9" fill="#006b47" /> <circle cx="581" cy="280" r="9" fill="#008080" /> <circle cx="438" cy="315" r="9" fill="#2e5a88" /> <circle cx="357" cy="350" r="9" fill="#465a8b" /> <circle cx="288" cy="385" r="9" fill="#5d5a8e" /> <circle cx="245" cy="420" r="9" fill="#755a91" /> <circle cx="220" cy="455" r="9" fill="#4b0082" /> <g font-family="Arial, sans-serif" font-size="13" fill="#777" text-anchor="middle">
+    <text x="220" y="500">1</text>
+    <text x="500" y="500">Spectrum (1: Deterministic | 10: Agentic)</text>
+    <text x="780" y="500">10</text>
+  </g>
+</svg>
