@@ -31,8 +31,8 @@ svg_content = f"""<svg width="{svg_width}" height="{svg_height}" viewBox="0 0 {s
   
   <text x="{svg_width/2}" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#333">Decision Spectrum for Choosing Approach</text>
   
-  <text x="{x_start}" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#8b0000">DETERMINISTIC AI</text>
-  <text x="{x_start}" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#8b0000">(Rigid Control)</text>
+  <text x="{x_start}" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#4b0082">DETERMINISTIC AI</text>
+  <text x="{x_start}" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4b0082">(Rigid Control)</text>
   
   <text x="{x_end}" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#006400">AGENTIC AI</text>
   <text x="{x_end}" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#006400">(Dynamic Autonomy)</text>
