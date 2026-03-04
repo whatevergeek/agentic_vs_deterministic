@@ -102,6 +102,102 @@ graph LR
 
 ---
 
+# TOPIC 3: SECURITY & FRAUD DETECTION
+## Use Case: Using AI to make the Fraud assessment process more efficient
+
+---
+
+## TOPIC 3 - SLIDE A: Use Case & Deterministic Approach
+
+### Narrative
+
+A financial institution needs to detect fraudulent credit card transactions in real-time. The **Deterministic AI** approach follows **Goal + Prescribed Detection Rules**. AI is given the goal (identify fraud) plus prescribed steps: identify relevant fraud detection checklist and documents, define step-by-step workflow, write custom scripts as needed, run workflow steps.
+
+1. **Developer Identifies Relevant Fraud Detection Checklist and Documents**: Developer analyzes fraud detection requirements and identifies which fraud patterns and transaction data AI must examine. Developer defines the specific indicators AI should check.
+2. **Developer Defines Step-by-Step Workflow**: Developer creates explicit workflow sequence AI must follow: transaction amount verification → merchant category check → geographic location analysis → velocity checks → known fraud pattern matching → risk scoring. AI executes each step in prescribed order.
+3. **Developer Writes Custom Scripts as Needed**: For complex fraud scenarios or edge cases, developer writes custom detection scripts that AI executes at specific workflow points. AI runs these scripts as instructed without deviation.
+4. **Developer Instructs AI to Run Steps in the Workflow**: AI processes transactions following the prescribed workflow, running custom scripts as needed. AI returns fraud assessments verified by business users against known fraud cases.
+
+**Key Advantage:** Consistent, auditable fraud detection with clear compliance trail; every decision traceable to specific detection rules; will always detect identified patterns.
+**Risk:** Rigid workflow may miss novel fraud patterns; requires developer intervention for new fraud techniques.
+
+### Simplified Process Diagram (Deterministic)
+
+```mermaid
+graph LR
+    A["Fraud Assessment:<br/>Credit Card<br/>Transactions"] --> B["Developer:<br/>Identifies Checklist<br/>& Documents"]
+    B --> C["Developer:<br/>Defines Workflow<br/>Steps"]
+    C --> D["Developer:<br/>Writes Custom<br/>Scripts"]
+    D --> E["Developer:<br/>Instructs AI<br/>Run Steps"]
+    E --> F["AI Returns<br/>Fraud Assessment"]
+    
+    style B fill:#e3f2fd
+    style C fill:#64b5f6
+    style D fill:#42a5f5
+    style E fill:#2196f3
+    style F fill:#1976d2
+```
+
+**Diagram Narrative:** This diagram illustrates the Deterministic AI approach to fraud detection. The developer prescribes every detection step, and AI executes the defined workflow to produce consistent, auditable fraud assessments.
+
+*   **A["Fraud Assessment: Credit Card Transactions"]**: Credit card transactions requiring fraud assessment in real-time.
+*   **B["Developer: Identifies Checklist & Documents"]**: Developer determines which fraud indicators apply and which transaction data AI must examine.
+*   **C["Developer: Defines Workflow Steps"]**: Developer creates explicit step-by-step fraud detection workflow that AI must follow in prescribed order.
+*   **D["Developer: Writes Custom Scripts"]**: Developer writes custom code for complex fraud patterns or detection logic that AI will execute at specific points.
+*   **E["Developer: Instructs AI Run Steps"]**: Developer instructs AI to execute the prescribed workflow, running custom scripts as defined.
+*   **F["AI Returns Fraud Assessment"]**: AI returns standardized fraud assessment that business users verify for accuracy and effectiveness.
+
+---
+
+## TOPIC 3 - SLIDE B: Agentic AI Approach
+
+### Narrative
+
+In contrast, the **Agentic AI** approach is given a **Goal Only: Assess Fraud Risk**. It autonomously determines the detection approach based on understanding fraud patterns and transaction context.
+
+1. **Developer Writes Prompt for Agent to Assess Fraud**: Developer provides high-level goal: "Assess this transaction for fraud risk based on our fraud detection framework." No step-by-step workflow prescribed.
+2. **Agent Automatically Finds Relevant Checklist and Documents**: AI autonomously searches fraud pattern database, identifies applicable detection criteria, and locates relevant transaction data and historical patterns.
+3. **Agent Creates Fraud Framework from Context Provided**: AI reasons about the optimal detection approach based on transaction characteristics, merchant patterns, and customer behavior. Adapts framework to each unique transaction context.
+4. **Agent Runs Steps in Framework**: AI executes its self-determined fraud detection framework, dynamically adjusting analysis depth based on risk indicators discovered during assessment.
+
+**Key Advantage:** Detects novel fraud patterns; adapts to emerging fraud techniques without developer intervention; dynamically learns new patterns and identifies patterns humans may not even know of.
+**Risk:** Variable detection approach makes audit trail more complex; reason needs to be inferred; harder to predict exact detection path.
+
+### Simplified Process Diagram (Agentic)
+
+```mermaid
+graph LR
+    A["Fraud Assessment:<br/>Credit Card<br/>Transactions"] --> B["Developer:<br/>Writes Prompt<br/>for Agent"]
+    B --> C{"Agent:<br/>Finds Checklist<br/>& Documents"}
+    C --> D{"Agent:<br/>Creates Framework<br/>from Context"}
+    D --> E["AI Returns<br/>Fraud Assessment"]
+    
+    style B fill:#e1f5fe
+    style C fill:#ce93d8
+    style D fill:#ba68c8
+    style E fill:#8e24aa
+```
+
+**Diagram Narrative:** This diagram illustrates the Agentic AI approach to fraud detection. The developer provides only the goal, and AI autonomously determines how to assess fraud based on patterns and transaction context.
+
+*   **A["Fraud Assessment: Credit Card Transactions"]**: Credit card transactions requiring fraud assessment in real-time.
+*   **B["Developer: Writes Prompt for Agent"]**: Developer provides high-level instruction: "Assess fraud risk based on our framework." No workflow steps prescribed.
+*   **C{"Agent: Finds Checklist & Documents"}**: AI autonomously searches for applicable fraud patterns and identifies relevant transaction data and behavioral indicators.
+*   **D{"Agent: Creates Framework from Context"}**: AI reasons about optimal detection approach based on transaction characteristics, creating adaptive framework for each assessment.
+*   **E["AI Returns Fraud Assessment"]**: AI produces fraud assessment with similar outcome to deterministic approach, but through dynamically determined process.
+
+---
+
+## TOPIC 3 - SLIDE C: Battle Arguments
+
+| **BATTLE** | **DETERMINISTIC AI** | **AGENTIC AI** |
+|---|---|---|
+| **Different Attack Patterns** | **COUNTERS: Will Always Detect Identified Patterns** <br><br> "But we guarantee detection of all known fraud patterns. Every card-not-present transaction over $500 triggers verification. Every geographic anomaly gets flagged. Our fraud analysts know exactly which rules fired. When regulators audit, we prove every known fraud type is covered. That's defensible fraud prevention." | **ARGUES: Dynamically Learns New Patterns** <br><br> "Your 'identified patterns' are yesterday's fraud. Criminals evolve faster than your rule updates. We detected a new synthetic identity pattern by correlating application timing, device fingerprints, and behavioral anomalies—signals your rules never connected. We identify patterns humans may not even know of. By the time you code new rules, fraudsters have moved on." |
+| **Auditor Trail** | **ARGUES: Full Step-by-Step Tracking and Reasoning** <br><br> "When a fraud case goes to court, we provide complete audit trails. Rule 47: transaction amount exceeded threshold. Rule 52: merchant category flagged. Rule 63: velocity check failed. Every decision documented, every step traceable. Legal teams can defend our decisions because the logic is explicit and documented." | **COUNTERS: Reason Needs to Be Inferred** <br><br> "But your 'full tracking' misses the why. We explain: 'Transaction pattern matches emerging fraud ring—unusual purchase sequence, device switching, and merchant hopping within 2 hours.' Your rules fired independently without connecting the story. Investigators need context, not just rule numbers. Our reasoning helps catch the entire fraud network." |
+| **Real-Time Explanation and<br/>Threat Response** | **COUNTERS: Clear Real-Time Explanation and Accountability** <br><br> "But when customers call about declined transactions, we give instant explanations: 'Transaction declined due to geographic anomaly—card used in two countries within one hour.' Clear, immediate, defensible. Your 'inferred reasoning' means support staff can't explain decisions. Customers demand accountability, not AI mysteries." | **ARGUES: Adaptive Threat Response Especially Against Other Agents** <br><br> "Your clear explanations work until fraudsters use AI to probe your rules. They test small transactions to map your thresholds, then exploit gaps. We adapt in real-time—when we detect systematic probing, we adjust our detection strategy dynamically. Your static rules are reverse-engineered. We're playing chess while you're following a script." |
+
+---
+
 # TOPIC 2: OPERATIONAL RELIABILITY AND COST
 ## Use Case: Trading Infrastructure Cost Optimization
 
