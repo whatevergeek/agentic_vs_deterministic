@@ -11,6 +11,97 @@
 
 ---
 
+## TOPIC 1 - SLIDE A: Use Case & Deterministic Approach
+
+### Narrative
+
+A bank needs to process loan applications efficiently while maintaining regulatory compliance. The **Deterministic AI** approach follows **Goal + Prescribed Workflow Steps**. AI is given the goal (assess loan eligibility) plus prescribed steps: identify relevant policy documents, run workflow steps in defined order, execute custom scripts as needed, return standardized evaluations.
+
+1. **Developer Identifies Relevant Policy and Documents**: Developer analyzes loan assessment requirements and identifies which policies and documents AI must process. Developer defines the specific documents AI should extract data from.
+2. **Developer Defines Step-by-Step Workflow**: Developer creates explicit workflow sequence AI must follow: document verification → income calculation → credit score check → debt-to-income ratio → risk assessment → approval decision. AI executes each step in prescribed order.
+3. **Developer May Need to Code Some Specifics**: For complex business rules or edge cases, developer writes custom scripts that AI executes at specific workflow points. AI runs these scripts as instructed without deviation.
+4. **AI Returns Loan Evaluations**: AI processes applications following the prescribed workflow, returning standardized loan evaluations. Evaluations are verified by business users against known test cases.
+
+**Key Advantage:** Consistent, auditable results with clear regulatory compliance trail; every decision traceable to specific policy rules.
+**Risk:** Rigid workflow may not adapt to unusual applications; requires developer intervention for new scenarios.
+
+### Simplified Process Diagram (Deterministic)
+
+```mermaid
+graph LR
+    A["Customer Submits:<br/>Loan Application +<br/>Documents"] --> B["Developer:<br/>Identifies Policy<br/>& Documents"]
+    B --> C["Developer:<br/>Defines Workflow<br/>Steps"]
+    C --> D["Developer:<br/>Codes Custom<br/>Scripts"]
+    D --> E["AI Executes:<br/>Prescribed Steps"]
+    E --> F["Loan Evaluation<br/>Output"]
+    
+    style B fill:#e3f2fd
+    style C fill:#64b5f6
+    style D fill:#42a5f5
+    style E fill:#2196f3
+    style F fill:#1976d2
+```
+
+**Diagram Narrative:** This diagram illustrates the Deterministic AI approach to loan assessment. The developer prescribes every step, and AI executes the defined workflow to produce consistent, auditable loan evaluations.
+
+*   **A["Customer Submits: Loan Application + Documents"]**: Customer provides loan application form and supporting documents (income statements, credit reports, etc.).
+*   **B["Developer: Identifies Policy & Documents"]**: Developer determines which lending policies apply and which documents AI must process for this loan type.
+*   **C["Developer: Defines Workflow Steps"]**: Developer creates explicit step-by-step workflow that AI must follow in prescribed order.
+*   **D["Developer: Codes Custom Scripts"]**: Developer writes custom code for complex business rules or calculations that AI will execute at specific points.
+*   **E["AI Executes: Prescribed Steps"]**: AI follows the prescribed workflow, running custom scripts as instructed, processing documents according to defined rules.
+*   **F["Loan Evaluation Output"]**: AI returns standardized loan evaluation that business users verify for accuracy and compliance.
+
+---
+
+## TOPIC 1 - SLIDE B: Agentic AI Approach
+
+### Narrative
+
+In contrast, the **Agentic AI** approach is given a **Goal Only: Assess Loan Eligibility**. It autonomously determines the workflow based on understanding lending policies and document context.
+
+1. **Developer Writes Prompt for Agent to Assess Loan Eligibility**: Developer provides high-level goal: "Assess this loan application for eligibility based on our lending policies." No step-by-step workflow prescribed.
+2. **Agent Automatically Finds Relevant Policy and Documents**: AI autonomously searches policy database, identifies applicable lending criteria, and locates relevant documents within the application package.
+3. **Agent Automatically Determines Workflow**: AI reasons about the optimal assessment sequence based on document availability, policy requirements, and application complexity. May process steps in different order for different applications.
+4. **Outcome Similar but Process Very Different**: AI produces loan evaluation similar to deterministic approach, but the path taken varies by application. AI adapts workflow to each unique situation.
+
+**Key Advantage:** Handles unusual applications intelligently; adapts to new scenarios without developer intervention; discovers insights from document patterns.
+**Risk:** Variable workflow makes audit trail more complex; harder to predict exact processing path; requires trust in AI reasoning.
+
+### Simplified Process Diagram (Agentic)
+
+```mermaid
+graph LR
+    A["Customer Submits:<br/>Loan Application +<br/>Documents"] --> B["Developer:<br/>Writes Prompt<br/>for Agent"]
+    B --> C{"Agent:<br/>Finds Policy<br/>& Documents"}
+    C --> D{"Agent:<br/>Determines<br/>Workflow"}
+    D --> E["Loan Evaluation<br/>Output"]
+    
+    style B fill:#e1f5fe
+    style C fill:#ce93d8
+    style D fill:#ba68c8
+    style E fill:#8e24aa
+```
+
+**Diagram Narrative:** This diagram illustrates the Agentic AI approach to loan assessment. The developer provides only the goal, and AI autonomously determines how to assess the loan based on policies and document context.
+
+*   **A["Customer Submits: Loan Application + Documents"]**: Customer provides loan application form and supporting documents.
+*   **B["Developer: Writes Prompt for Agent"]**: Developer provides high-level instruction: "Assess loan eligibility based on our policies." No workflow steps prescribed.
+*   **C{"Agent: Finds Policy & Documents"}**: AI autonomously searches for applicable lending policies and identifies relevant documents within the submission.
+*   **D{"Agent: Determines Workflow"}**: AI reasons about optimal assessment approach based on application characteristics, adapting workflow to each unique case.
+*   **E["Loan Evaluation Output"]**: AI produces loan evaluation with similar outcome to deterministic approach, but through dynamically determined process.
+
+---
+
+## TOPIC 1 - SLIDE C: Battle Arguments
+
+| **BATTLE** | **DETERMINISTIC AI** | **AGENTIC AI** |
+|---|---|---|
+| **Standard Reporting Formats<br/>Multiple Document Types** | **COUNTERS: No Surprises, Consistent** <br><br> "But we process 50,000 loans monthly with zero surprises. Same documents, same workflow, same output format every time. Our business users know exactly what to expect. Operations teams can plan capacity precisely. That consistency is what enables scale." | **ARGUES: Dynamically Take Changes Into Account** <br><br> "When regulations change mid-quarter or a self-employed applicant submits tax returns instead of W-2s, we adapt immediately. New fair lending rule drops? We understand the policy intent and adjust. Your team spends weeks recoding workflows while we're already compliant. We reason about document equivalence your templates never anticipated." |
+| **Regulatory Audit** | **ARGUES: Almost Perfect Trace of Simple Logic** <br><br> "When regulators audit our loan decisions, we show them the exact workflow every application followed. Step 1: document verification. Step 2: income calculation. Step 3: credit check. Every decision traces to a specific rule in our documented workflow. No surprises, no black boxes. That's what passes regulatory scrutiny." | **COUNTERS: Complex Explanation of Reasoning** <br><br> "But your 'simple logic' creates rigid workflows that break with real-world variations. When we explain our reasoning—'Tax Schedule C shows income similar to W-2 wages, applicant has consistent savings pattern'—we provide richer context than your step-by-step trace. Regulators care about fair outcomes, not just documented steps." |
+| **Understanding Context** | **COUNTERS: Stricter Control Over What AI Learns** <br><br> "But we control exactly what AI considers. Income verification uses only approved document types. Credit decisions follow only specified criteria. No hidden factors, no unexplained reasoning. When fair lending audits happen, we prove AI used only legally permissible factors. Your 'context understanding' is a compliance risk." | **ARGUES: Can Learn From Wide Variety of Sources** <br><br> "Your strict control means missed opportunities. We discovered that applicants with irregular income patterns but consistent savings actually have lower default rates than your model predicts. We learn from broader context while respecting compliance boundaries. Your rules are frozen in yesterday's assumptions." |
+
+---
+
 # TOPIC 2: OPERATIONAL RELIABILITY AND COST
 ## Use Case: Trading Infrastructure Cost Optimization
 
@@ -190,6 +281,6 @@ graph LR
 |---|---|---|
 | **Compliance** | **ARGUES: Uniform Methodology = Repeatable** <br><br> "Regulators demand proof, not promises. Our uniform methodology means every single line of code was refactored using the exact same approved patterns. When auditors ask 'How do you ensure quality?' we show them the rulebook we followed religiously. That's defensible. That's compliance." | **COUNTERS: Risk-Based Intelligence** <br><br> "But compliance isn't about treating a critical trading engine the same as a low-risk admin report. That's bureaucracy, not intelligence. We apply maximum rigor where billions of dollars flow and streamline where risk is minimal. Regulators care about outcomes—zero trading failures—not whether you followed a template designed for average code." |
 | **Predictability** | **COUNTERS: Crystal Clear Audit Trail** <br><br> "But when something breaks, you need to know why. With our approach, if a refactored module fails, the audit trail is crystal clear: either we deviated from the methodology, or the methodology itself has a gap. Either way, accountability is absolute. No guessing, no finger-pointing—just facts." | **ARGUES: Intelligent Pattern Recognition** <br><br> "Your 'predictability' is predictably wasteful. We discovered hundreds of duplicate classes—copy-paste technical debt everywhere. Your template would refactor each one individually over months. We extracted a shared library and refactored them all simultaneously in weeks. That's not a shortcut—that's intelligence your rigid process would never discover." |
-| **Reliability** | **ARGUES: Proven Methodology** <br><br> "When billions are on the line, you don't experiment. Our methodology has been battle-tested across hundreds of enterprise migrations. Every pattern, every sequence, every checkpoint has been validated in production. Your 'intelligence' is untested creativity applied to mission-critical systems. That's not innovation—that's gambling with shareholder value." | **COUNTERS: Real-Time Adaptation** <br><br> "But while you're following your playbook, we're adapting to reality. We discovered a critical dependency chain your static analysis missed entirely. Your sequential plan would have broken production. We dynamically reordered the refactoring to preserve system integrity. Your 'proven methodology' can't handle what it's never seen before." |
+| **Reliability** | **ARGUES: More Reliable Methodology** <br><br> "When billions are on the line, you don't experiment. Our methodology has been battle-tested across hundreds of enterprise migrations. Every pattern, every sequence, every checkpoint has been validated in production. Your 'intelligence' is untested creativity applied to mission-critical systems. That's not innovation—that's gambling with shareholder value." | **COUNTERS: Real-Time Adaptation** <br><br> "But while you're following your playbook, we're adapting to reality. We discovered a critical dependency chain your static analysis missed entirely. Your sequential plan would have broken production. We dynamically reordered the refactoring to preserve system integrity. Your 'proven methodology' can't handle what it's never seen before." |
 
 ---
