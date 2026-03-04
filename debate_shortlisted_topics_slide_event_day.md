@@ -102,6 +102,98 @@ graph LR
 
 ---
 
+# TOPIC 2: OPERATIONAL RELIABILITY AND COST
+## Use Case: Trading Infrastructure Cost Optimization
+
+---
+
+## TOPIC 2 - SLIDE A: Use Case & Deterministic Approach
+
+### Narrative
+
+Managing global trading infrastructure is expensive. The **Deterministic AI** approach prioritizes predictability via **Goal + Prescribed Scaling Rules + Budget Constraints**. AI is given the goal (maintain high uptime within budget) plus prescribed steps: monitor demand on prescribed schedule, apply prescribed scaling tiers, enforce budget limits, execute prescribed failover procedures.
+
+1. **AI Monitors Demand on Prescribed Schedule and Applies Prescribed Scaling Tiers**: AI monitors demand across all regions at regular prescribed intervals (not continuously). At each check, AI evaluates demand against prescribed thresholds and scales to prescribed capacity levels: High demand → Full capacity, Medium demand → Moderate capacity, Low demand → Reduced capacity, Off-Market → Minimal capacity. AI follows prescribed tier rules and scheduled monitoring intervals, not continuous real-time optimization.
+2. **AI Enforces Prescribed Budget Limits with Exception Rules**: AI applies prescribed budget constraint: daily infrastructure cost must not exceed approved budget ceiling. AI follows prescribed budget management rules: "IF approaching budget limit AND demand is Low/Off-Market THEN scale down to next lower tier." "IF approaching budget limit AND demand is High THEN maintain current tier, trigger budget alert to operations team per prescribed escalation procedure." "IF budget limit reached AND demand is Critical THEN maintain minimum required capacity, escalate to executive approval per prescribed emergency protocol." Budget predictability through prescribed spending caps with prescribed exception handling.
+3. **AI Executes Prescribed Failover Procedures**: AI enforces prescribed redundancy configuration—when scaling down, AI maintains prescribed minimum redundancy (multiple regions at full capacity). AI applies prescribed routing tables and load balancer rules per tier.
+4. **AI Applies Prescribed Threshold Logic**: AI uses prescribed decision rules evaluated at regular intervals: "IF demand increases significantly since last check THEN scale up one tier (if budget allows)." "IF demand stable below threshold for multiple consecutive checks THEN scale down one tier." AI follows prescribed timing and threshold formulas, not predictive learning.
+
+**Key Advantage:** Predictable cost savings with guaranteed reliability AND guaranteed budget compliance; AI-executed prescribed tiers with scheduled monitoring provide auditability, regulatory certainty, and financial predictability.
+**Risk:** Prescribed monitoring intervals mean AI reacts slower than continuous monitoring; AI might miss rapid demand spikes between checks or scale too conservatively due to scheduled evaluation windows.
+
+### Simplified Process Diagram (Deterministic)
+
+```mermaid
+graph LR
+    A["Global Data Centers"] --> B["AI: Scheduled Monitoring<br/>Regular Intervals"]
+    B --> C["AI: Tier-Based Scaling<br/>Prescribed Rules"]
+    C --> D["AI: Budget Enforcement<br/>Comprehensive Rules"]
+    D --> E["Reliable Trading"]
+    
+    style B fill:#e3f2fd
+    style C fill:#64b5f6
+    style D fill:#42a5f5
+    style E fill:#2196f3
+```
+
+**Diagram Narrative:** This diagram illustrates the Deterministic AI approach to trading infrastructure cost optimization. It emphasizes scheduled, predictable monitoring and tier-based scaling across `Global Data Centers` to ensure `Reliable Trading` with guaranteed service levels and budget compliance.
+
+*   **A[\"Global Data Centers\"]**: Represents the distributed trading infrastructure spanning multiple geographical locations.
+*   **B[\"AI: Scheduled Monitoring<br/>Regular Intervals\"]**: AI monitors demand on a prescribed schedule at regular intervals (not continuously). At each checkpoint, AI evaluates current demand against prescribed thresholds.
+*   **C[\"AI: Tier-Based Scaling<br/>Prescribed Rules\"]**: AI executes prescribed scaling tier rules based on scheduled monitoring results: High demand → Full capacity, Medium demand → Moderate capacity, Low demand → Reduced capacity, Off-Market → Minimal capacity. AI follows prescribed thresholds evaluated at scheduled intervals.
+*   **D[\"AI: Budget Enforcement<br/>Comprehensive Rules\"]**: AI enforces prescribed budget constraint with comprehensive rules: daily cost must not exceed approved ceiling. AI applies prescribed budget management rules based on demand context - scale down when demand is low, maintain capacity and alert operations when demand is high, escalate to emergency protocol when demand is critical. AI executes multiple prescribed rules to handle different budget scenarios.
+*   **E[\"Reliable Trading\"]**: The ultimate goal, achieved through AI executing prescribed threshold-based rules on scheduled intervals with budget caps, balancing stability, cost, and financial predictability through predetermined tiers.
+
+---
+
+## TOPIC 2 - SLIDE B: Agentic AI Approach
+
+### Narrative
+
+In contrast, the **Agentic AI** approach is given a **Goal: High Uptime + Minimized Cost**. It uses autonomous reasoning to dynamically reconfigure infrastructure based on predicted and real-time demand.
+
+1. **Predictive Scaling**: Learns market schedules to pre-provision capacity before news spikes.
+2. **Dynamic Optimization**: Scales to minimal capacity during off-market hours for massive savings.
+3. **Autonomous Failover**: Detects region failures and re-routes workloads without human scripts.
+
+**Key Advantage:** Drastic reduction in operational expenses while maintaining high performance.
+**Risk:** Orchestration complexity; dynamic changes are harder to audit than static configurations.
+
+### Simplified Process Diagram (Agentic)
+
+```mermaid
+graph LR
+    A["Global Data Centers"] --> B{"AI Brain:<br/>Continuous Monitor<br/>Predict & Scale"}
+    B --> C["Real-Time Optimization<br/>Immediate Response"]
+    B --> D["Predictive Pre-Scaling<br/>Event Anticipation"]
+    C --> E["Optimized Trading"]
+    D --> E
+    
+    style B fill:#f3e5f5
+    style C fill:#ce93d8
+    style D fill:#ba68c8
+    style E fill:#7b1fa2
+```
+
+**Diagram Narrative:** This diagram illustrates the Agentic AI approach to trading infrastructure cost optimization. Here, the AI acts as an intelligent `AI Brain` that continuously monitors in real-time, learns, predicts, and dynamically adjusts resources across `Global Data Centers` to achieve `Optimized Trading`.
+
+*   **A[\"Global Data Centers\"]**: Represents the distributed trading infrastructure spanning multiple geographical locations.
+*   **B{\"AI Brain:<br/>Continuous Monitor<br/>Predict & Scale\"}**: This central node signifies the Agentic AI's core capability to continuously monitor in real-time (not on scheduled intervals), autonomously analyze historical and real-time data, predict demand spikes, and determine optimal scaling strategies without prescribed rules.
+*   **C[\"Real-Time Optimization<br/>Immediate Response\"]**: Shows the AI's ability to respond immediately to demand changes—scaling down during off-market hours for cost savings, scaling up within moments when demand increases, with no scheduled delay.
+*   **D[\"Predictive Pre-Scaling<br/>Event Anticipation\"]**: Illustrates the AI's proactive intelligence in anticipating major market announcements or events and pre-provisioning resources well in advance to prevent latency or performance issues during demand surges.
+*   **E[\"Optimized Trading\"]**: The ultimate outcome, where high uptime and performance are maintained, but with drastically reduced operational costs due to the continuous, dynamic, and intelligent management of resources.
+
+---
+
+## TOPIC 2 - SLIDE C: Battle Arguments
+
+| **BATTLE** | **DETERMINISTIC AI** | **AGENTIC AI** |
+|---|---|---|
+| **Reliability** | **ARGUES: Scheduled Monitoring + Comprehensive Rules = Predictable Behavior** <br><br> "We use demand data intelligently—through comprehensive prescribed rules on a prescribed schedule. Our AI monitors demand at regular intervals and applies predetermined tiers with extensive rule coverage: scaling rules, budget management rules, failover rules, emergency protocols. When markets crash, our AI doesn't improvise or predict—it follows comprehensive prescribed logic tested in every scenario, evaluated at predictable intervals. Regulators can audit our complete rule set AND our monitoring schedule. That's reliability you can bank on, literally." | **COUNTERS: Real-Time Adaptation** <br><br> "But your scheduled intervals create reaction lag. Markets don't wait for your next monitoring checkpoint. We adapt continuously in real-time—when demand spikes, we respond immediately, not at the next scheduled check. When patterns emerge, we learn and optimize instantly. Your comprehensive rules are impressive on paper, but they're always reacting to yesterday's data. We're adapting to this second's reality." |
+| **Guarantees** | **COUNTERS: Comprehensive Rule Coverage + Auditable Logic** <br><br> "But legal certainty wins deals. When clearing partners and regulators demand guarantees, we show them our complete prescribed rule library: scaling tiers, budget management with demand-aware exceptions, failover procedures, emergency escalation protocols. Every scenario covered by documented rules: 'IF budget limit approaching AND demand low THEN scale down. IF budget limit AND demand high THEN alert operations. IF budget critical AND demand critical THEN emergency protocol.' No black-box predictions, no autonomous optimization—just AI executing comprehensive documented rules. That's what contracts are built on." | **ARGUES: Predictive Intelligence** <br><br> "But your rules are always reactive, no matter how comprehensive. Fed announcement happens? Your AI waits for the next scheduled check, evaluates rules, then reacts—by then traders are already experiencing latency. We predict the announcement impact and pre-scale well in advance. Your thousand rules can't match one intelligent prediction. You're building a bigger rulebook while we're staying ahead of the curve." |
+| **Testing** | **ARGUES: Complete Rule Validation on Predictable Schedule** <br><br> "Chaos engineering perfection. We can test every rule in our comprehensive library at prescribed intervals: simulate low demand + budget limit, verify AI scales down per rule. Simulate high demand + budget limit, verify AI alerts operations per rule. Simulate critical demand + budget critical, verify AI executes emergency protocol per rule. Every scenario, every rule, every scheduled checkpoint is testable and repeatable. You can't test autonomous real-time predictions—they're different every time." | **COUNTERS: Continuous Learning** <br><br> "But your testing validates yesterday's rules against yesterday's scenarios. We learn continuously from real operational patterns. Our AI discovered early warning signals that predict demand surges well before they happen—patterns your prescribed rules never anticipated. We test in production, learn in real-time, and improve continuously. Your comprehensive rulebook is frozen in time. We're evolving every day." |
+
+---
 # TOPIC 3: SECURITY & FRAUD DETECTION
 ## Use Case: Using AI to make the Fraud assessment process more efficient
 
@@ -195,99 +287,6 @@ graph LR
 | **Different Attack Patterns** | **COUNTERS: Will Always Detect Identified Patterns** <br><br> "But we guarantee detection of all known fraud patterns. Every card-not-present transaction over $500 triggers verification. Every geographic anomaly gets flagged. Our fraud analysts know exactly which rules fired. When regulators audit, we prove every known fraud type is covered. That's defensible fraud prevention." | **ARGUES: Dynamically Learns New Patterns** <br><br> "Your 'identified patterns' are yesterday's fraud. Criminals evolve faster than your rule updates. We detected a new synthetic identity pattern by correlating application timing, device fingerprints, and behavioral anomalies—signals your rules never connected. We identify patterns humans may not even know of. By the time you code new rules, fraudsters have moved on." |
 | **Auditor Trail** | **ARGUES: Full Step-by-Step Tracking and Reasoning** <br><br> "When a fraud case goes to court, we provide complete audit trails. Rule 47: transaction amount exceeded threshold. Rule 52: merchant category flagged. Rule 63: velocity check failed. Every decision documented, every step traceable. Legal teams can defend our decisions because the logic is explicit and documented." | **COUNTERS: Reason Needs to Be Inferred** <br><br> "But your 'full tracking' misses the why. We explain: 'Transaction pattern matches emerging fraud ring—unusual purchase sequence, device switching, and merchant hopping within 2 hours.' Your rules fired independently without connecting the story. Investigators need context, not just rule numbers. Our reasoning helps catch the entire fraud network." |
 | **Real-Time Explanation and<br/>Threat Response** | **COUNTERS: Clear Real-Time Explanation and Accountability** <br><br> "But when customers call about declined transactions, we give instant explanations: 'Transaction declined due to geographic anomaly—card used in two countries within one hour.' Clear, immediate, defensible. Your 'inferred reasoning' means support staff can't explain decisions. Customers demand accountability, not AI mysteries." | **ARGUES: Adaptive Threat Response Especially Against Other Agents** <br><br> "Your clear explanations work until fraudsters use AI to probe your rules. They test small transactions to map your thresholds, then exploit gaps. We adapt in real-time—when we detect systematic probing, we adjust our detection strategy dynamically. Your static rules are reverse-engineered. We're playing chess while you're following a script." |
-
----
-
-# TOPIC 2: OPERATIONAL RELIABILITY AND COST
-## Use Case: Trading Infrastructure Cost Optimization
-
----
-
-## TOPIC 2 - SLIDE A: Use Case & Deterministic Approach
-
-### Narrative
-
-Managing global trading infrastructure is expensive. The **Deterministic AI** approach prioritizes predictability via **Goal + Prescribed Scaling Rules + Budget Constraints**. AI is given the goal (maintain high uptime within budget) plus prescribed steps: monitor demand on prescribed schedule, apply prescribed scaling tiers, enforce budget limits, execute prescribed failover procedures.
-
-1. **AI Monitors Demand on Prescribed Schedule and Applies Prescribed Scaling Tiers**: AI monitors demand across all regions at regular prescribed intervals (not continuously). At each check, AI evaluates demand against prescribed thresholds and scales to prescribed capacity levels: High demand → Full capacity, Medium demand → Moderate capacity, Low demand → Reduced capacity, Off-Market → Minimal capacity. AI follows prescribed tier rules and scheduled monitoring intervals, not continuous real-time optimization.
-2. **AI Enforces Prescribed Budget Limits with Exception Rules**: AI applies prescribed budget constraint: daily infrastructure cost must not exceed approved budget ceiling. AI follows prescribed budget management rules: "IF approaching budget limit AND demand is Low/Off-Market THEN scale down to next lower tier." "IF approaching budget limit AND demand is High THEN maintain current tier, trigger budget alert to operations team per prescribed escalation procedure." "IF budget limit reached AND demand is Critical THEN maintain minimum required capacity, escalate to executive approval per prescribed emergency protocol." Budget predictability through prescribed spending caps with prescribed exception handling.
-3. **AI Executes Prescribed Failover Procedures**: AI enforces prescribed redundancy configuration—when scaling down, AI maintains prescribed minimum redundancy (multiple regions at full capacity). AI applies prescribed routing tables and load balancer rules per tier.
-4. **AI Applies Prescribed Threshold Logic**: AI uses prescribed decision rules evaluated at regular intervals: "IF demand increases significantly since last check THEN scale up one tier (if budget allows)." "IF demand stable below threshold for multiple consecutive checks THEN scale down one tier." AI follows prescribed timing and threshold formulas, not predictive learning.
-
-**Key Advantage:** Predictable cost savings with guaranteed reliability AND guaranteed budget compliance; AI-executed prescribed tiers with scheduled monitoring provide auditability, regulatory certainty, and financial predictability.
-**Risk:** Prescribed monitoring intervals mean AI reacts slower than continuous monitoring; AI might miss rapid demand spikes between checks or scale too conservatively due to scheduled evaluation windows.
-
-### Simplified Process Diagram (Deterministic)
-
-```mermaid
-graph LR
-    A["Global Data Centers"] --> B["AI: Scheduled Monitoring<br/>Regular Intervals"]
-    B --> C["AI: Tier-Based Scaling<br/>Prescribed Rules"]
-    C --> D["AI: Budget Enforcement<br/>Comprehensive Rules"]
-    D --> E["Reliable Trading"]
-    
-    style B fill:#e3f2fd
-    style C fill:#64b5f6
-    style D fill:#42a5f5
-    style E fill:#2196f3
-```
-
-**Diagram Narrative:** This diagram illustrates the Deterministic AI approach to trading infrastructure cost optimization. It emphasizes scheduled, predictable monitoring and tier-based scaling across `Global Data Centers` to ensure `Reliable Trading` with guaranteed service levels and budget compliance.
-
-*   **A[\"Global Data Centers\"]**: Represents the distributed trading infrastructure spanning multiple geographical locations.
-*   **B[\"AI: Scheduled Monitoring<br/>Regular Intervals\"]**: AI monitors demand on a prescribed schedule at regular intervals (not continuously). At each checkpoint, AI evaluates current demand against prescribed thresholds.
-*   **C[\"AI: Tier-Based Scaling<br/>Prescribed Rules\"]**: AI executes prescribed scaling tier rules based on scheduled monitoring results: High demand → Full capacity, Medium demand → Moderate capacity, Low demand → Reduced capacity, Off-Market → Minimal capacity. AI follows prescribed thresholds evaluated at scheduled intervals.
-*   **D[\"AI: Budget Enforcement<br/>Comprehensive Rules\"]**: AI enforces prescribed budget constraint with comprehensive rules: daily cost must not exceed approved ceiling. AI applies prescribed budget management rules based on demand context - scale down when demand is low, maintain capacity and alert operations when demand is high, escalate to emergency protocol when demand is critical. AI executes multiple prescribed rules to handle different budget scenarios.
-*   **E[\"Reliable Trading\"]**: The ultimate goal, achieved through AI executing prescribed threshold-based rules on scheduled intervals with budget caps, balancing stability, cost, and financial predictability through predetermined tiers.
-
----
-
-## TOPIC 2 - SLIDE B: Agentic AI Approach
-
-### Narrative
-
-In contrast, the **Agentic AI** approach is given a **Goal: High Uptime + Minimized Cost**. It uses autonomous reasoning to dynamically reconfigure infrastructure based on predicted and real-time demand.
-
-1. **Predictive Scaling**: Learns market schedules to pre-provision capacity before news spikes.
-2. **Dynamic Optimization**: Scales to minimal capacity during off-market hours for massive savings.
-3. **Autonomous Failover**: Detects region failures and re-routes workloads without human scripts.
-
-**Key Advantage:** Drastic reduction in operational expenses while maintaining high performance.
-**Risk:** Orchestration complexity; dynamic changes are harder to audit than static configurations.
-
-### Simplified Process Diagram (Agentic)
-
-```mermaid
-graph LR
-    A["Global Data Centers"] --> B{"AI Brain:<br/>Continuous Monitor<br/>Predict & Scale"}
-    B --> C["Real-Time Optimization<br/>Immediate Response"]
-    B --> D["Predictive Pre-Scaling<br/>Event Anticipation"]
-    C --> E["Optimized Trading"]
-    D --> E
-    
-    style B fill:#f3e5f5
-    style C fill:#ce93d8
-    style D fill:#ba68c8
-    style E fill:#7b1fa2
-```
-
-**Diagram Narrative:** This diagram illustrates the Agentic AI approach to trading infrastructure cost optimization. Here, the AI acts as an intelligent `AI Brain` that continuously monitors in real-time, learns, predicts, and dynamically adjusts resources across `Global Data Centers` to achieve `Optimized Trading`.
-
-*   **A[\"Global Data Centers\"]**: Represents the distributed trading infrastructure spanning multiple geographical locations.
-*   **B{\"AI Brain:<br/>Continuous Monitor<br/>Predict & Scale\"}**: This central node signifies the Agentic AI's core capability to continuously monitor in real-time (not on scheduled intervals), autonomously analyze historical and real-time data, predict demand spikes, and determine optimal scaling strategies without prescribed rules.
-*   **C[\"Real-Time Optimization<br/>Immediate Response\"]**: Shows the AI's ability to respond immediately to demand changes—scaling down during off-market hours for cost savings, scaling up within moments when demand increases, with no scheduled delay.
-*   **D[\"Predictive Pre-Scaling<br/>Event Anticipation\"]**: Illustrates the AI's proactive intelligence in anticipating major market announcements or events and pre-provisioning resources well in advance to prevent latency or performance issues during demand surges.
-*   **E[\"Optimized Trading\"]**: The ultimate outcome, where high uptime and performance are maintained, but with drastically reduced operational costs due to the continuous, dynamic, and intelligent management of resources.
-
----
-
-## TOPIC 2 - SLIDE C: Battle Arguments
-
-| **BATTLE** | **DETERMINISTIC AI** | **AGENTIC AI** |
-|---|---|---|
-| **Reliability** | **ARGUES: Scheduled Monitoring + Comprehensive Rules = Predictable Behavior** <br><br> "We use demand data intelligently—through comprehensive prescribed rules on a prescribed schedule. Our AI monitors demand at regular intervals and applies predetermined tiers with extensive rule coverage: scaling rules, budget management rules, failover rules, emergency protocols. When markets crash, our AI doesn't improvise or predict—it follows comprehensive prescribed logic tested in every scenario, evaluated at predictable intervals. Regulators can audit our complete rule set AND our monitoring schedule. That's reliability you can bank on, literally." | **COUNTERS: Real-Time Adaptation** <br><br> "But your scheduled intervals create reaction lag. Markets don't wait for your next monitoring checkpoint. We adapt continuously in real-time—when demand spikes, we respond immediately, not at the next scheduled check. When patterns emerge, we learn and optimize instantly. Your comprehensive rules are impressive on paper, but they're always reacting to yesterday's data. We're adapting to this second's reality." |
-| **Guarantees** | **COUNTERS: Comprehensive Rule Coverage + Auditable Logic** <br><br> "But legal certainty wins deals. When clearing partners and regulators demand guarantees, we show them our complete prescribed rule library: scaling tiers, budget management with demand-aware exceptions, failover procedures, emergency escalation protocols. Every scenario covered by documented rules: 'IF budget limit approaching AND demand low THEN scale down. IF budget limit AND demand high THEN alert operations. IF budget critical AND demand critical THEN emergency protocol.' No black-box predictions, no autonomous optimization—just AI executing comprehensive documented rules. That's what contracts are built on." | **ARGUES: Predictive Intelligence** <br><br> "But your rules are always reactive, no matter how comprehensive. Fed announcement happens? Your AI waits for the next scheduled check, evaluates rules, then reacts—by then traders are already experiencing latency. We predict the announcement impact and pre-scale well in advance. Your thousand rules can't match one intelligent prediction. You're building a bigger rulebook while we're staying ahead of the curve." |
-| **Testing** | **ARGUES: Complete Rule Validation on Predictable Schedule** <br><br> "Chaos engineering perfection. We can test every rule in our comprehensive library at prescribed intervals: simulate low demand + budget limit, verify AI scales down per rule. Simulate high demand + budget limit, verify AI alerts operations per rule. Simulate critical demand + budget critical, verify AI executes emergency protocol per rule. Every scenario, every rule, every scheduled checkpoint is testable and repeatable. You can't test autonomous real-time predictions—they're different every time." | **COUNTERS: Continuous Learning** <br><br> "But your testing validates yesterday's rules against yesterday's scenarios. We learn continuously from real operational patterns. Our AI discovered early warning signals that predict demand surges well before they happen—patterns your prescribed rules never anticipated. We test in production, learn in real-time, and improve continuously. Your comprehensive rulebook is frozen in time. We're evolving every day." |
 
 ---
 
